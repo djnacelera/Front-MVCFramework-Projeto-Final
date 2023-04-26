@@ -15,9 +15,9 @@ namespace AceleraPlenoTrabalhoFinal.Mvc
             ConfigureAuth(app);
         }
 
-        public void ConfigureServices(IServiceCollection services)
+        /*public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IRepositoryPedido<Pedido>, RepositoryPedido>();
-        }
+        }*/
     }
 }
