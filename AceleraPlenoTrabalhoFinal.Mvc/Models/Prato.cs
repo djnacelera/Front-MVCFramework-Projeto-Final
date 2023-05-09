@@ -33,5 +33,6 @@ namespace AceleraPlenoTrabalhoFinal.Mvc.Models
                 }
             }
         }
+        public string Titulo { get; set; }
     }
 }

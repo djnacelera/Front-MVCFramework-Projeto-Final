@@ -284,7 +284,7 @@ namespace AceleraPlenoTrabalhoFinal.Mvc.Controllers
                     {
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
                         prato = JsonConvert.DeserializeObject<Prato>(apiResponse);
-                        return prato.Descricao;
+                        return prato.Titulo;
 
                     }
                 }
