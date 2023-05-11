@@ -37,6 +37,7 @@ namespace AceleraPlenoTrabalhoFinal.Mvc.Controllers
                     {
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
                         listaPrato = JsonConvert.DeserializeObject<List<Prato>>(apiResponse);
+                        listaPrato = listaPrato.FindAll(x => x.Status == true).ToList();
                     }
                 }
 
